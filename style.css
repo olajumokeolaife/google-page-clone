@@ -1,0 +1,102 @@
+*{
+    /*default styling*/
+    margin: 0;
+    padding:0;
+    box-sizing: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+    height:60px;
+    display:flex;
+
+    align-items: center;   /*this aligns the vertical directon in the center*/
+
+  
+
+    justify-content: space-between;   /*this aligns the horizontal      directon in the center..this shifts the 2 divs to both ends*/
+
+    padding:0 10px;  /* this creates space inside the border of the element..top and bottom, right and left*/
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+
+}
+
+.page{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    height:100vh; /*this specifies that the page should be the viewers height*/
+    justify-content: space-between; /* this gives space between the footer and the main section*/
+}
+.nav-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+.nav-right{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.google-img{
+    width:30%;
+
+}
+.search-box{
+    display: flex;
+    justify-content: center;
+    width:40%;
+    border:1px solid lightgray;
+    border-radius: 16px;
+    padding:10px;
+
+}
+
+.search-box input{
+    border: none;
+}
+
+button{
+    padding:10px;
+    font-size: 1.1em;
+    border-radius: 16px;
+    border: none;
+    margin: 10px;
+}
+
+
+footer{
+    height: 100px;
+    background-color: lightgray;
+    width:100%; /*use 100% of the full height so it can span acress*/
+    padding:0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:20px ;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-left, .links-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+footer p{
+    text-align: center; /* this centers the p*/
+}
